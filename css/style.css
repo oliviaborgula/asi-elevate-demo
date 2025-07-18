@@ -1,9 +1,12 @@
-  body {
-    font-family: raleway; san-serif;
+/* GLOBAL STYLES */
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-
-    /* NAVIGATION BAR */
   
+  /* NAVIGATION BAR */
   nav {
     display: flex;
     justify-content: space-between;
@@ -15,22 +18,21 @@
   .left-section {
     display: flex;
     align-items: center;
-    gap: 0px; 
+    gap: 0;
   }
   
-  /* Logo */
   .logo {
     color: black;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
   }
-
+  
   .nav-links {
     display: flex;
     gap: 20px;
-    padding: 15px 40px; 
-    margin: 20px;        
+    padding: 15px 40px;
+    margin: 20px;
   }
   
   .nav-links a {
@@ -43,7 +45,7 @@
   .nav-links a:hover {
     color: #b51717;
   }
-
+  
   .cta-button {
     background-color: #b51717;
     color: white;
@@ -57,63 +59,62 @@
   .cta-button:hover {
     background-color: #941313;
   }
-
-/*INTRODUCTION*/
-.split-section {
-  display: flex;
-  width: 100%;
-  height: 400px; /* adjust height as needed */
-}
-
-.left-side {
-  flex: 1;
-  background-color: #b51717;
-  color: white;
-  padding: 80px;
-}
-
-.right-side {
-  flex: 1;
-  background-color: #ffffff;
-  color: #000;
-  padding: 40px;
-  border-left: 2px solid #e0e0e0; /* optional divider */
-}
-
-.intro-title{
-    font-family: georgia;
+  
+  /* TOP BAR */
+  .top-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #8b0000;
+  }
+  
+  /* SPLIT SECTION */
+  .split-section {
+    display: flex;
+    width: 100%;
+    min-height: 500px; /* changed from fixed height */
+  }
+  
+  .left-side {
+    flex: 1;
+    background-color: #b51717;
+    color: white;
+    padding: 80px;
+  }
+  
+  .right-side {
+    flex: 1;
+    background-color: #ffffff;
+    color: #000;
+    padding: 40px;
+  }
+  
+  .intro-title {
+    font-family: Georgia, serif;
     font-weight: bold;
     font-size: 37px;
-}
-
-.my-points{
-    display: inline-block;  /* add this */
-    background-color: gray;
-    color: white;
-    padding: 8px 16px;
+  }
+  
+  /* POINTS & REWARDS */
+  .my-points,
+  .my-rewards {
+    color: gray;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
-    transition: background-color 0.3s;
     font-size: 25px;
-}
-
-.my-rewards{
-    display: inline-block;  /* add this */
-    background-color: gray;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .point-value {
+    font-family: Georgia, serif;
     font-weight: bold;
-    transition: background-color 0.3s;
-    font-size: 25px;
-}
-
-.points-bar-container {
+    font-size: 20px;
+  }
+  
+  .points-bar-container {
     position: relative;
     width: 100%;
-    max-width: 400px;  /* adjust width */
+    max-width: 400px;
     height: 24px;
     background-color: #eee;
     border-radius: 12px;
@@ -123,8 +124,8 @@
   
   .points-bar-fill {
     height: 100%;
-    background-color: #b51717; /* same red as your points */
-    width: 0; /* will be animated/updated by JS */
+    background-color: #b51717;
+    width: 0;
     border-radius: 12px 0 0 12px;
     transition: width 1s ease;
   }
@@ -143,12 +144,82 @@
     top: 0;
     width: 2px;
     height: 100%;
-    background-color: white;  
+    background-color: white;
   }
 
-  .point-value{
-    font-family: georgia;
+  
+  .rewards-icons {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    width: 100px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon-box i {
+    font-size: 50px;
+    color: #b51717;
+    margin-bottom: 8px;
+  }
+
+  .icon-box p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* so it doesn't interfere with hover */
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .icon-box:hover p {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .icon-box:hover {
+    transform: scale(1.1);
+    z-index: 10; /* makes sure it stays on top when enlarged */
+  }
+  
+  /* REDEEM BUTTON (same style as .my-points, but can override size if needed) */
+  .redeem-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #b51717;
+    color: white;
+    border: none;
+    border-radius: 4px;
     font-weight: bold;
-    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .redeem-btn:hover {
+    background-color: #941313;
+  }
+  
+  /* ABOUT SECTION */
+  .full-width-section {
+    width: 100%;
+    background-color: white;
+    padding: 40px 0;
+  }
+  
+  .aligned-content {
+    padding-left: 80px;
+    max-width: 800px;
   }
   

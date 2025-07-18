@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ASI Elevate Loyalty Program Demo</title>
-    <meta name="description" content="demo website for ASI Elevate's mock loyalty program">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-          crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/b3f4a48d85.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ASI Elevate Loyalty Program Demo</title>
+  <meta name="description" content="Demo website for ASI Elevate's mock loyalty program" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b3f4a48d85.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet"
+  />
 </head>
 
-
-<!--all content-->
 <body>
-
-<!--header with nav links-->
-<nav>
+  <!-- Navigation -->
+  <nav>
     <div class="left-section">
       <a href="#" class="logo">Logo placeholder</a>
       <div class="nav-links">
@@ -38,18 +43,28 @@
         <a href="https://asicentral.com/" target="_blank">Events</a>
       </div>
     </div>
-    <a href="https://example.com/join" target="_blank" class="cta-button">Access ESP+</a>
-</nav>
+    <a href="https://asicentral.com" target="_blank" class="cta-button">Access ESP+</a>
+  </nav>
 
-<!--intro section with points, rewards, and chatbot link-->
-<section class="split-section">
+  <!-- Burgundy Top Bar -->
+  <section class="top-bar"></section>
+
+  <!-- Split Intro Section -->
+  <section class="split-section">
     <div class="left-side">
-      <h2 class="intro-title">Earn Rewards, Rise Higher <br>with ASI Elevate</h2>
-      <p>ASI Elevate is a distributor loyalty program designed to reward members for engaging with ASI's programs. By participating, distributors can earn points and redeem them for various rewards.</p>
+      <h2 class="intro-title">Earn Rewards, Rise Higher <br />with ASI Elevate</h2>
+      <p>
+        ASI Elevate is a distributor loyalty program designed to reward members for engaging with
+        ASI's programs. By participating, distributors can earn points and redeem them for various
+        rewards.
+      </p>
     </div>
+
     <div class="right-side">
       <h2 class="my-points">My points</h2>
       <p class="point-value">355 points.</p>
+
+      <!-- Points Bar -->
       <div class="points-bar-container">
         <div class="points-bar-fill"></div>
         <div class="tick-marks">
@@ -59,12 +74,49 @@
           <span class="tick" style="left: 80%"></span>
           <span class="tick" style="left: 100%"></span>
         </div>
+      </div>  
+
+      <p>Next reward at 400 points.</p>
+
+      <!-- Rewards -->
+      <h2 class="my-rewards">My Rewards</h2>
+      <div class="rewards-icons">
+        <div class="icon-box">
+          <i class="fas fa-ticket-alt"></i>
+          <p>ASI Show Discount</p>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-book-open"></i>
+          <p>Free Catalogue</p>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-box-open"></i>
+          <p>Sample Kit</p>
+        </div>
       </div>
-      <p>Next reward at 500 points.</p>
-      <h2 class="my-rewards">My rewards</h2>
+
+<!-- Redeem Button -->
+      <button class="my-points redeem-btn">Redeem Rewards</button>
     </div>
   </section>
 
-<!--about the rewards program-->
-<script src="script.js"></script>
+  <!-- Full Width Info Section -->
+  <section class="full-width-section">
+    <div class="aligned-content">
+      <h2 class="intro-title">More Ways to Earn</h2>
+      <p>
+        Explore additional activities and promotions to boost your ASI Elevate points and redeem
+        exclusive rewards.
+      </p>
+      <p>
+        Distributors often struggle to stay consistently engaged with ASI's tools, training, and
+        community. Many feel overwhelmed by the volume of resources or are unclear on how to
+        maximize their membership value.
+      </p>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
+</html>
