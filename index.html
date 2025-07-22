@@ -61,8 +61,8 @@
     </div>
 
     <div class="right-side">
-      <h2 class="my-points">My points</h2>
-      <p class="point-value">355 points.</p>
+      <h1 class="my-points">Points and Rewards</h1>
+      <p class="point-value">355 points</p>
 
       <!-- Points Bar -->
       <div class="points-bar-container">
@@ -79,27 +79,26 @@
       <p>Next reward at 400 points.</p>
 
       <!-- Rewards -->
-    <h2 class="my-rewards">My Rewards</h2>
       <div class="rewards-icons">
         <div class="icon-box">
           <span class="halo-icon">
             <i class="fas fa-ticket-alt"></i>
           </span>
-          <p>ASI Show Discount</p>
+          <p>ASI Membership Discount</p>
         </div>
         
         <div class="icon-box">
           <span class="halo-icon">
             <i class="fas fa-book-open"></i>
           </span>
-          <p>Free Catalogue</p>
+          <p>Free Catalog</p>
         </div>
         
         <div class="icon-box">
           <span class="halo-icon">
             <i class="fas fa-box-open"></i>
           </span>
-          <p>Sample Kit</p>
+          <p>Free Samples</p>
         </div>        
 
 <!-- Redeem Button -->
@@ -108,14 +107,27 @@
 </div>
 </div>
 
-<!-- other rewards -->
-<h2 class="my-rewards">My Rewards</h2>
+<!-- Redeem Popup Modal -->
+<div class="redeem-modal" id="redeemModal">
+  <div class="modal-content">
+    <span class="close-button" id="closeModal">&times;</span>
+    <h3>Redeem Your Reward</h3>
+    <form id="redeemForm">
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Company Name" required>
+      <input type="text" placeholder="ASI Number" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
   </section>
 
   <!-- Full Width Info Section -->
   <section class="full-width-section">
     <div class="aligned-content">
-      <h2 class="intro-title">More Ways to Earn</h2>
+      <h2 class="intro-title">How to Earn</h2>
       <p>
         Explore additional activities and promotions to boost your ASI Elevate points and redeem
         exclusive rewards.
@@ -125,6 +137,16 @@
         community. Many feel overwhelmed by the volume of resources or are unclear on how to
         maximize their membership value.
       </p>
+      <div class="all-rewards">
+        <p>Additional rewards include:</p>
+        <ul>
+          <li>10% discount on membership</li>
+          <li>50 free catalogs</li>
+          <li>Free sample promo product</li>
+          <li>One free custom logo design</li>
+        </ul>
+        </div>
+      </div>
     </div>
   </section>
 
