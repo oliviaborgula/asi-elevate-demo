@@ -164,7 +164,7 @@ body {
   }
   
   .redeem-btn:hover {
-    background-color: rgb(193, 225, 236);
+    background-color: #941313;
   }
   
   /* ABOUT SECTION */
@@ -211,6 +211,8 @@ body {
   border-radius: 50%;
   animation: pulse-glow 2s infinite;
   margin-bottom: 14px; /* <-- More space between icon and text */
+  cursor: pointer;
+  
 }
 
 .halo-icon i {
@@ -231,7 +233,8 @@ body {
   text-align: center;
   flex: 1;
   min-width: 120px;
-  margin-bottom: 5px;  
+  margin-bottom: 5px; 
+  cursor: pointer; 
 }
 
 /* Button wrapper to separate it visually */

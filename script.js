@@ -77,4 +77,10 @@ function toggleChatbox() {
   }
 }
 
+// Make all icon-boxes open the redeem modal on click
+document.querySelectorAll(".icon-box").forEach((box) => {
+  box.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+});
 
