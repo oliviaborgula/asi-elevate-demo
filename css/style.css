@@ -446,3 +446,69 @@ body {
 }
 
 
+/*MOBILE*/
+
+@media (max-width: 768px) {
+  /* Make split section stack vertically */
+  .split-section {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  /* Stack rewards icons */
+  .rewards-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-box {
+    min-width: unset;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Full width chatbox */
+  #chatbox {
+    width: 90%;
+    bottom: 100px;
+    right: 5%;
+  }
+
+  /* Adjust chatbot icon placement */
+  .chatbot-icon-container {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  /* Points bar responsiveness */
+  .points-bar-container {
+    max-width: 100%;
+  }
+
+  /* Button full width for better tap targets */
+  .redeem-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* Adjust nav layout if needed */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .cta-button {
+    width: 100%;
+    margin-top: 10px;
