@@ -441,3 +441,35 @@ body {
 }
 
 
+.chatbox-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.chatbox-maximize,
+.chatbox-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chatbox-container.fullscreen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  margin: 0;
+  z-index: 10000;
+}
+
+.chatbox-container.fullscreen .chatbox-body {
+  height: calc(100% - 100px); /* adjusts height for header and input */
+  overflow-y: auto;
+}
+

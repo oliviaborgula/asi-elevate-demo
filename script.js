@@ -84,3 +84,8 @@ document.querySelectorAll(".icon-box").forEach((box) => {
   });
 });
 
+// Toggle the chatbox size between normal and fullscreen
+function toggleChatboxSize() {
+  const chatbox = document.getElementById("chatbox");
+  chatbox.classList.toggle("fullscreen");
+}

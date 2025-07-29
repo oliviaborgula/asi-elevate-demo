@@ -174,19 +174,14 @@
   </div>
 </div>
 
-<!-- Chatbox -->
-<div class="chatbot-icon-container" onclick="toggleChatbox()">
-  <div class="chatbot-icon">
-    <i class="fas fa-comment-dots"></i>
-    <span class="chatbot-tooltip">Ask a question</span>
-  </div>
-</div>
-
 <div class="chatbox-container" id="chatbox">
   <div class="chatbox-header">
     <span>Chat with us</span>
-    <button class="chatbox-close" onclick="toggleChatbox()">×</button>
-  </div>
+    <div class="chatbox-controls">
+      <button class="chatbox-maximize" onclick="toggleChatboxSize()">⤢</button>
+      <button class="chatbox-close" onclick="toggleChatbox()">×</button>
+    </div>
+  </div>  
   <div class="chatbox-body" id="chatbox-body">
     <p><strong>ASI:</strong> Hi there! How can I help you?</p>
   </div>
